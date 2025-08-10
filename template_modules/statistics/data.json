@@ -1,0 +1,69 @@
+{
+  "statistics": {
+    "sessions": [
+      {
+        "date": "09.08.2025",
+        "start": 1754730387357,
+        "end": 1754730387357
+      },
+      {
+        "date": "09.08.2025",
+        "start": 1754734974646,
+        "end": 1754735326607
+      },
+      {
+        "date": "09.08.2025",
+        "start": 1754735331582,
+        "end": 1754736809272
+      },
+      {
+        "date": "09.08.2025",
+        "start": 1754736813165,
+        "end": 1754738628137
+      },
+      {
+        "date": "09.08.2025",
+        "start": 1754738632541,
+        "end": 1754743580503
+      }
+    ],
+    "files": [
+      "menu.html",
+      "header.html",
+      "header.scss",
+      "iconfont.svg",
+      "iconfont.ttf",
+      "iconfont.woff2",
+      "iconfont.html",
+      "settings.scss",
+      "menu.scss",
+      "OFL.txt",
+      "Barlow-LightItalic.ttf",
+      "Barlow-Italic.ttf",
+      "Barlow-Medium.ttf",
+      "Barlow-ExtraLight.ttf",
+      "Barlow-Regular.ttf",
+      "Barlow-Black.ttf",
+      "Barlow-ExtraLightItalic.ttf",
+      "Barlow-ThinItalic.ttf",
+      "Barlow-Thin.ttf",
+      "Barlow-SemiBoldItalic.ttf",
+      "Barlow-BlackItalic.ttf",
+      "Barlow-Bold.ttf",
+      "Barlow-Light.ttf",
+      "Barlow-ExtraBold.ttf",
+      "Barlow-ExtraBoldItalic.ttf",
+      "Barlow-BoldItalic.ttf",
+      "Barlow-MediumItalic.ttf",
+      "SFProDisplay-Bold.woff",
+      "SFProDisplay-Bold.woff2",
+      "SFProDisplay-Medium.woff",
+      "SFProDisplay-Medium.woff2",
+      "SFProDisplay-Regular.woff",
+      "SFProDisplay-Regular.woff2",
+      "SFProDisplay-Semibold.woff",
+      "SFProDisplay-Semibold.woff2",
+      "style.scss"
+    ]
+  }
+}

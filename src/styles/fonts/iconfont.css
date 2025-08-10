@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'iconfont';
+	font-display: swap;
+	src: url('C://programming/online_store/src/assets/svgicons/preview/iconfont.woff2?18ed2f80fb1b0b741d058686c777ad37')
+		format('woff2');
+}
+[class*='--icon-']::before {
+	font-family: iconfont;
+}
+[class*='--icon-person']::before {
+	content: '\f101';
+}
+[class*='--icon-heart']::before {
+	content: '\f102';
+}
+[class*='--icon-geo']::before {
+	content: '\f103';
+}
+[class*='--icon-cart']::before {
+	content: '\f104';
+}
