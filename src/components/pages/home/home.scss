@@ -1,0 +1,148 @@
+.page {
+	&--hero {
+		@include adaptiveValue('padding-top', 78, 25);
+	}
+}
+
+.hero {
+	&__container {
+		display: flex;
+		gap: 36px;
+		justify-content: space-between;
+		@media (max-width: toEm($mobile)) {
+			flex-direction: column;
+		}
+	}
+	&__sliders {
+		// max-width: 870px;
+		// @media (max-width: toEm(890)) {
+		// 	width: 100%;
+		// }
+
+		@include adaptiveValue('width', 870, 320);
+		@media (max-width: toEm(1024)) {
+			width: 100%;
+		}
+	}
+	&__slider {
+		position: relative;
+	}
+	&__slide {
+		img {
+			@media (max-width: toEm(1024)) {
+				width: 100%;
+			}
+			object-fit: contain;
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top: 50%;
+		translate: 0 -50%;
+		@media (any-hover: hover) {
+			&:hover {
+				&::before {
+					color: #ffffff90;
+				}
+			}
+		}
+		&::before {
+			font-size: 30px;
+			color: #fff;
+			transition: color 0.3s;
+		}
+		&--prev {
+			left: 15px;
+		}
+		&--next {
+			right: 15px;
+		}
+	}
+	&__pagination {
+		display: flex;
+		gap: 9px;
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		translate: -50% 0;
+		cursor: pointer;
+		span {
+			display: block;
+			border: 1px solid #fff;
+			border-radius: 100%;
+			width: 11px;
+			aspect-ratio: 1;
+		}
+		span.swiper-pagination-bullet-active {
+			background-color: #fff;
+		}
+	}
+}
+
+.banner {
+	@include adaptiveValue('line-height', 24, 19, 0, 1200, 1024);
+	@media (max-width: toEm(1024)) {
+		display: none;
+	}
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	width: 265px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	&__title {
+		color: $blueColor;
+		font-weight: 700;
+		@include adaptiveValue('font-size', 27, 16, 0, 1200, 1024);
+		@include adaptiveValue('margin-bottom', 7, 0, 0, 1200, 1024);
+	}
+	&__price {
+		align-self: flex-end;
+		text-align: right;
+		font-family: $fontBarlow;
+		p {
+			font-size: 14px;
+			text-decoration: line-through;
+		}
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		text-wrap: balance;
+		flex: 1 0 auto;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	&__footer {
+		padding: 18px 25px;
+		text-align: center;
+		text-wrap: balance;
+		font-size: 18px;
+		background-color: $baseColor;
+		&--title {
+			@include adaptiveValue('font-size', 20, 14, 0, 1200, 1024);
+		}
+		p {
+			font-family: $fontBarlow;
+			font-weight: 700;
+			font-size: 18px;
+		}
+	}
+	&__sale {
+		font-family: $fontPN;
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		background-color: $blueColor;
+		padding: 8px 20px;
+		color: #fff;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}

@@ -1,8 +1,59 @@
 <script type="module" src="@components/pages/home/home.js"></script>
-<link rel="stylesheet" href="@components/pages/home/home.scss">
+<link rel="stylesheet" href="@components/pages/home/home.scss" />
 
-<main class="page page--home">
-	<div class="page__container">
-
-	</div>
+<main class="page page--hero">
+	<section class="hero">
+		<div class="hero__container">
+			<div class="hero__sliders">
+				<div data-fls-slider class="hero__slider swiper">
+					<div class="hero__wrapper swiper-wrapper">
+						<div class="hero__slide swiper-slide">
+							<img src="@img/hero/slider/slider.png" alt="Image" />
+						</div>
+						<div class="hero__slide swiper-slide">
+							<img src="@img/hero/slider/slider.png" alt="Image" />
+						</div>
+						<div class="hero__slide swiper-slide">
+							<img src="@img/hero/slider/slider.png" alt="Image" />
+						</div>
+						<div class="hero__slide swiper-slide">
+							<img src="@img/hero/slider/slider.png" alt="Image" />
+						</div>
+						<div class="hero__slide swiper-slide">
+							<img src="@img/hero/slider/slider.png" alt="Image" />
+						</div>
+						<div class="hero__slide swiper-slide">
+							<img src="@img/hero/slider/slider.png" alt="Image" />
+						</div>
+					</div>
+					<div class="swiper-pagination hero__pagination"></div>
+					<button
+						type="button"
+						class="swiper-button-prev hero__button hero__button--prev hero__button--icon-prev"
+					></button>
+					<button
+						type="button"
+						class="swiper-button-next hero__button hero__button--next hero__button--icon-next"
+					></button>
+				</div>
+			</div>
+			<article class="hero__banner banner">
+				<div class="banner__price">
+					<h4 class="banner__title">190 000₽</h4>
+					<p>225 000₽</p>
+				</div>
+				<div class="banner__content">
+					<img src="@img/hero/motor.png" alt="Image" />
+					<p>Лодочный мотор Suzuki DF9.9BRS</p>
+				</div>
+				<div class="banner__footer">
+					<h4 class="banner__footer-title">Акция действует до</h4>
+					<p>31.08.2020</p>
+				</div>
+				<div class="banner__sale">
+					<h4>акция</h4>
+				</div>
+			</article>
+		</div>
+	</section>
 </main>

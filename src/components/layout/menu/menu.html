@@ -2,7 +2,7 @@
 	<button type="button" data-fls-menu class="menu__icon icon-menu">
 		<span></span>
 	</button>
-	<nav class="menu__body">
+	<nav class="menu__body menu--desktop">
 		<ul class="menu__list">
 			<each
 				loop='item in [
@@ -24,6 +24,42 @@
 					</li>
 				</else>
 			</each>
+		</ul>
+	</nav>
+	<nav class="menu__body menu--mobile">
+		<ul class="menu__list">
+			<li class="menu__item">
+				<a href="#" class="menu__link menu__link--icon-person">Войти</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link menu__link--icon-person">Регистрация</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link menu__link--icon-heart">Избранное</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link menu__link--icon-cart">Корзина</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link menu__link--icon-home">Магазины</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link menu__link--icon-percent">Акции</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link menu__link--icon-box"
+					>Доставка и оплата</a
+				>
+			</li>
+			<li class="menu__item"><a href="#" class="menu__link">Квадроциклы</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Катера</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Гидроциклы</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Лодки</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Вездеходы</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Снегоходы</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Двигатели</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Запчасти</a></li>
+			<li class="menu__item menu__item--location">Москва, ул. Науки 25</li>
 		</ul>
 	</nav>
 </div>

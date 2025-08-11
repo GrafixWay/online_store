@@ -8,7 +8,7 @@
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
 import Swiper from 'swiper'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import { Navigation, Pagination } from 'swiper/modules'
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -26,14 +26,14 @@ import './slider.scss'
 function initSliders() {
 	// Список слайдерів
 	// Перевіряємо, чи є слайдер на сторінці
-	if (document.querySelector('.swiper')) {
+	if (document.querySelector('.swiper-product')) {
 		// <- Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
-		new Swiper('.swiper', {
+		new Swiper('.swiper-product', {
 			// <- Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation, Pagination, Autoplay],
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -43,23 +43,25 @@ function initSliders() {
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			//loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
+			/*
 			// Ефекти
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
+			*/
 
 			// Пагінація
 
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
+			// pagination: {
+			// 	el: '.swiper-pagination',
+			// 	clickable: true,
+			// },
 
 			// Скроллбар
 			/*
@@ -101,6 +103,6 @@ function initSliders() {
 		})
 	}
 }
-document.querySelector('[data-fls-slider]')
-	? window.addEventListener('load', initSliders)
-	: null
+// document.querySelector('[data-fls-slider-product]')
+// 	? window.addEventListener('load', initSliders)
+// 	: null

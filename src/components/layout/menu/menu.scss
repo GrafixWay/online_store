@@ -1,4 +1,17 @@
 .menu {
+	&--desktop {
+		@media (max-width: toEm($mobile)) {
+			display: none;
+		}
+	}
+	&--mobile {
+		display: none;
+		@media (max-width: toEm($mobile)) {
+			display: block;
+			position: relative;
+			z-index: 1;
+		}
+	}
 	// .menu__icon
 	&__icon {
 	}
@@ -6,6 +19,8 @@
 	&__body {
 		@media (max-width: toEm($mobile)) {
 			position: fixed;
+			@include adaptiveValue('margin-top', 50, 40);
+			background-color: #fff;
 			width: 100%;
 			height: 100svh;
 			left: -100%;
@@ -17,11 +32,12 @@
 				content: '';
 				position: fixed;
 				width: 100%;
-				height: 70px;
+				height: 90px;
 				left: -100%;
 				top: 0;
 				transition: left 0.3s;
 				z-index: 2;
+				background-color: #fff;
 			}
 			[data-fls-menu-open] & {
 				left: 0;
@@ -33,19 +49,40 @@
 	}
 	// .menu__list
 	&__list {
-		@media (max-width: toEm($mobile)) {
+		@media (min-width: toEm($mobile)) {
+			display: flex;
+			@include adaptiveValue('gap', 50, 20);
+			// flex-direction: column;
 		}
 	}
 	// .menu__item
 	&__item {
-		display: inline-block;
-		&:not(:last-child) {
-			@include adaptiveValue('padding-right', 50, 5, 0, 990, 767);
+		@media (max-width: toEm($mobile)) {
+			margin-bottom: 36px;
+			&:not(:last-child) {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			}
+		}
+		&--location {
+			padding-left: 53px;
 		}
 	}
+	display: inline-block;
+	&:not(:last-child) {
+		@include adaptiveValue('padding-right', 20, 5, 0, 990, 767);
+	}
+
 	// .menu__link
 	&__link {
-		@include adaptiveValue('font-size', 20, 14, 0, 990, 767);
+		@media (max-width: toEm($mobile)) {
+			padding-left: 53px;
+			position: relative;
+			&::before {
+				position: absolute;
+				translate: -27px 0;
+			}
+		}
+		@include adaptiveValue('font-size', 16, 14, 0, 990, 767);
 	}
 }
 

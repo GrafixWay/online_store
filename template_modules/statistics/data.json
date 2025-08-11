@@ -25,6 +25,46 @@
         "date": "09.08.2025",
         "start": 1754738632541,
         "end": 1754743580503
+      },
+      {
+        "date": "11.08.2025",
+        "start": 1754901565350,
+        "end": 1754903130225
+      },
+      {
+        "date": "11.08.2025",
+        "start": 1754903148266,
+        "end": 1754903284666
+      },
+      {
+        "date": "11.08.2025",
+        "start": 1754903319623,
+        "end": 1754903499448
+      },
+      {
+        "date": "11.08.2025",
+        "start": 1754903508989,
+        "end": 1754903535084
+      },
+      {
+        "date": "11.08.2025",
+        "start": 1754903542176,
+        "end": 1754909610560
+      },
+      {
+        "date": "11.08.2025",
+        "start": 1754909621221,
+        "end": 1754913127691
+      },
+      {
+        "date": "11.08.2025",
+        "start": 1754913132581,
+        "end": 1754914553024
+      },
+      {
+        "date": "12.08.2025",
+        "start": 1754947292807,
+        "end": 1754947292807
       }
     ],
     "files": [
@@ -63,7 +103,16 @@
       "SFProDisplay-Regular.woff2",
       "SFProDisplay-Semibold.woff",
       "SFProDisplay-Semibold.woff2",
-      "style.scss"
+      "style.scss",
+      "home.svg",
+      "box.svg",
+      "home.html",
+      "slider.js",
+      "slider.scss",
+      "home.scss",
+      "proximanova_bold.otf",
+      "35a16616",
+      "Proxima Nova.zip"
     ]
   }
 }

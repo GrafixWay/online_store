@@ -1,21 +1,32 @@
-@font-face {
-	font-family: 'iconfont';
+@font-face { 
+	font-family: "iconfont"; 
 	font-display: swap;
-	src: url('C://programming/online_store/src/assets/svgicons/preview/iconfont.woff2?18ed2f80fb1b0b741d058686c777ad37')
-		format('woff2');
+	src: url("C://programming/online_store/src/assets/svgicons/preview/iconfont.woff2?35674773e460ea32838b79b4ab25e1f1") format("woff2"); 
+} 
+[class*="--icon-"]::before{
+	font-family: iconfont; 
 }
-[class*='--icon-']::before {
-	font-family: iconfont;
-}
-[class*='--icon-person']::before {
-	content: '\f101';
-}
-[class*='--icon-heart']::before {
-	content: '\f102';
-}
-[class*='--icon-geo']::before {
-	content: '\f103';
-}
-[class*='--icon-cart']::before {
-	content: '\f104';
-}
+	[class*="--icon-person"]::before { 
+		content: "\f101"; 
+	} 
+	[class*="--icon-percent"]::before { 
+		content: "\f102"; 
+	} 
+	[class*="--icon-next"]::before { 
+		content: "\f103"; 
+	} 
+	[class*="--icon-home"]::before { 
+		content: "\f104"; 
+	} 
+	[class*="--icon-heart"]::before { 
+		content: "\f105"; 
+	} 
+	[class*="--icon-geo"]::before { 
+		content: "\f106"; 
+	} 
+	[class*="--icon-cart"]::before { 
+		content: "\f107"; 
+	} 
+	[class*="--icon-box"]::before { 
+		content: "\f108"; 
+	} 
