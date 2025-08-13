@@ -5,6 +5,7 @@
 }
 
 .hero {
+	@include adaptiveValue('margin-bottom', 77, 25);
 	&__container {
 		display: flex;
 		gap: 36px;
@@ -130,6 +131,7 @@
 			font-family: $fontBarlow;
 			font-weight: 700;
 			font-size: 18px;
+			color: $blueColor;
 		}
 	}
 	&__sale {
@@ -144,5 +146,58 @@
 		position: absolute;
 		left: 0;
 		top: 0;
+	}
+}
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.search {
+	// .search__container
+
+	&__container {
+	}
+}
+.search-tabs {
+	// .search-tabs__navigation
+
+	&__navigation {
+	}
+
+	// .search-tabs__title
+
+	&__title {
+		text-align: center;
+		padding: 12px 26px;
+		margin-bottom: 25px;
+	}
+
+	&__title.--tab-active {
+		font-weight: 700;
+		background-color: $baseColor;
+		border-radius: 5px;
+	}
+
+	// .search-tabs__content
+
+	&__content {
+	}
+
+	// .search-tabs__body
+
+	&__body {
+	}
+
+	&__inner {
+		display: flex;
+	}
+
+	&__input {
+		color: #656464;
+		font-size: 16px;
+		border-radius: 3px;
+		background-color: $baseColor;
+		padding: 15px 0 15px 20px;
+	}
+
+	&__button {
 	}
 }

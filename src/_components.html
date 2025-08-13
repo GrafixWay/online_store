@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-	<include src="@components/layout/head/head.html" locals='{
+	<include
+		src="@components/layout/head/head.html"
+		locals='{
 		"title":"Розробка компонентів", 
 		"preloader": {
 			"enable":"false",
@@ -8,10 +10,11 @@
 		},
 		"keywords":"", 
 		"description":""
-	}'>
+	}'
+	>
 	</include>
 	<style>
-		.components{
+		.components {
 			padding: 50px;
 			display: flex;
 			flex-direction: column;
@@ -21,7 +24,7 @@
 	<body>
 		<div class="components">
 			<div class="components__item">
-
+				<include src="@components/forms/button/button.html"></include>
 			</div>
 		</div>
 	</body>

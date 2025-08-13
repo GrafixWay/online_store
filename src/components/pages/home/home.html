@@ -56,4 +56,80 @@
 			</article>
 		</div>
 	</section>
+	<section class="search">
+		<div class="search__container">
+			<div data-fls-tabs class="search-tabs">
+				<nav data-fls-tabs-titles class="search-tabs__navigation">
+					<button type="button" class="search-tabs__title">
+						Поиск по номеру
+					</button>
+					<button type="button" class="search-tabs__title --tab-active">
+						Поиск по марке
+					</button>
+					<button type="button" class="search-tabs__title">
+						Поиск по названию товара
+					</button>
+				</nav>
+				<div data-fls-tabs-body class="search-tabs__content">
+					<div class="search-tabs__body">
+						<div class="search-tabs__inner">
+							<input
+								data-fls-input
+								autocomplete="off"
+								type="text"
+								name="form[]"
+								data-error="Ошибка"
+								placeholder="Введите номер"
+								class="search-tabs__input"
+							/>
+							<a
+								href="#"
+								data-fls-button
+								class="button button--blue search-tabs__button"
+								>искать</a
+							>
+						</div>
+					</div>
+					<div class="search-tabs__body">
+						<div class="search-tabs__inner">
+							<input
+								data-fls-input
+								autocomplete="off"
+								type="text"
+								name="form[]"
+								data-error="Ошибка"
+								placeholder="Введите марку"
+								class="search-tabs__input"
+							/>
+							<a
+								href="#"
+								data-fls-button
+								class="button button--blue search-tabs__button"
+								>искать</a
+							>
+						</div>
+					</div>
+					<div class="search-tabs__body">
+						<div class="search-tabs__inner">
+							<input
+								data-fls-input
+								autocomplete="off"
+								type="text"
+								name="form[]"
+								data-error="Ошибка"
+								placeholder="Введите название товара"
+								class="search-tabs__input"
+							/>
+							<a
+								href="#"
+								data-fls-button
+								class="button button--blue search-tabs__button"
+								>искать</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
