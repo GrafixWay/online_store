@@ -29,4 +29,16 @@
 			}
 		}
 	}
+	&--mobile {
+		padding: 0;
+		&::before {
+			font-size: 24px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: inherit;
+				background-color: inherit;
+			}
+		}
+	}
 }

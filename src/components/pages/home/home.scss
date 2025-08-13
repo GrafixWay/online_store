@@ -160,6 +160,11 @@
 	// .search-tabs__navigation
 
 	&__navigation {
+		@media (max-width: toEm($mobile)) {
+			display: flex;
+			text-wrap: nowrap;
+			overflow-x: auto;
+		}
 	}
 
 	// .search-tabs__title
@@ -168,12 +173,36 @@
 		text-align: center;
 		padding: 12px 26px;
 		margin-bottom: 25px;
+		@media (max-width: toEm($mobile)) {
+			position: relative;
+			&::before {
+				content: '';
+				transition: left 0.3s, width 0.3s;
+				width: 0;
+				position: absolute;
+				bottom: 0px;
+				left: 50%;
+				background-color: $blueColor;
+				height: 3px;
+			}
+		}
 	}
 
 	&__title.--tab-active {
-		font-weight: 700;
-		background-color: $baseColor;
-		border-radius: 5px;
+		@media (min-width: toEm($mobile)) {
+			font-weight: 700;
+			background-color: $baseColor;
+			border-radius: 5px;
+		}
+		@media (max-width: toEm($mobile)) {
+			font-weight: 600;
+			&::before {
+				content: '';
+				width: 100%;
+				left: 0;
+				color: #000;
+			}
+		}
 	}
 
 	// .search-tabs__content
@@ -188,6 +217,9 @@
 
 	&__inner {
 		display: flex;
+		@media (max-width: toEm($mobile)) {
+			position: relative;
+		}
 	}
 
 	&__input {
@@ -198,6 +230,19 @@
 		padding: 15px 0 15px 20px;
 	}
 
-	&__button {
+	&__button--desktop {
+		@media (max-width: toEm($mobile)) {
+			display: none;
+		}
+	}
+	&__button--mobile {
+		display: none;
+		@media (max-width: toEm($mobile)) {
+			display: inline-flex;
+			position: absolute;
+			top: 50%;
+			right: 2%;
+			translate: -2% -50%;
+		}
 	}
 }
