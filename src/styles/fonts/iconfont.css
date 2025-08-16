@@ -1,7 +1,7 @@
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("C://programming/online_store/src/assets/svgicons/preview/iconfont.woff2?37c336cb8afe00bc4141f67b35680688") format("woff2"); 
+	src: url("C://programming/online_store/src/assets/svgicons/preview/iconfont.woff2?5e6bdc798d215277833d7aaf104b72ac") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -9,27 +9,39 @@
 	[class*="--icon-search"]::before { 
 		content: "\f101"; 
 	} 
-	[class*="--icon-person"]::before { 
+	[class*="--icon-s-yt"]::before { 
 		content: "\f102"; 
 	} 
-	[class*="--icon-percent"]::before { 
+	[class*="--icon-s-vk"]::before { 
 		content: "\f103"; 
 	} 
-	[class*="--icon-next"]::before { 
+	[class*="--icon-s-inst"]::before { 
 		content: "\f104"; 
 	} 
-	[class*="--icon-home"]::before { 
+	[class*="--icon-s-fb"]::before { 
 		content: "\f105"; 
 	} 
-	[class*="--icon-heart"]::before { 
+	[class*="--icon-person"]::before { 
 		content: "\f106"; 
 	} 
-	[class*="--icon-geo"]::before { 
+	[class*="--icon-percent"]::before { 
 		content: "\f107"; 
 	} 
-	[class*="--icon-cart"]::before { 
+	[class*="--icon-next"]::before { 
 		content: "\f108"; 
 	} 
-	[class*="--icon-box"]::before { 
+	[class*="--icon-home"]::before { 
 		content: "\f109"; 
+	} 
+	[class*="--icon-heart"]::before { 
+		content: "\f10a"; 
+	} 
+	[class*="--icon-geo"]::before { 
+		content: "\f10b"; 
+	} 
+	[class*="--icon-cart"]::before { 
+		content: "\f10c"; 
+	} 
+	[class*="--icon-box"]::before { 
+		content: "\f10d"; 
 	} 

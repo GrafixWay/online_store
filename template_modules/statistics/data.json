@@ -100,7 +100,17 @@
       {
         "date": "15.08.2025",
         "start": 1755286255140,
-        "end": 1755286255140
+        "end": 1755287244962
+      },
+      {
+        "date": "16.08.2025",
+        "start": 1755331659657,
+        "end": 1755337956368
+      },
+      {
+        "date": "16.08.2025",
+        "start": 1755337969928,
+        "end": 1755337969928
       }
     ],
     "files": [
@@ -156,7 +166,9 @@
       "searchtabs.html",
       "button.html",
       "_components.html",
-      "button.scss"
+      "button.scss",
+      "footer.html",
+      "footer.scss"
     ]
   }
 }

@@ -103,6 +103,7 @@
 		text-align: right;
 		font-family: $fontBarlow;
 		p {
+			color: $greyColor;
 			font-size: 14px;
 			text-decoration: line-through;
 		}
@@ -275,6 +276,9 @@
 			&:hover {
 				border: none;
 				box-shadow: 3px 3px 20px 0 rgba(50, 50, 50, 0.25);
+				.category__title {
+					color: $blueColor;
+				}
 			}
 		}
 		&:last-child {
@@ -295,18 +299,12 @@
 		font-family: $fontBarlow;
 		font-weight: 700;
 		@include adaptiveValue('font-size', 23, 18);
-
-		@media (any-hover: hover) {
-			&:hover {
-				cursor: pointer;
-				color: $blueColor;
-			}
-		}
 	}
 
 	// .category__more
 
 	&__more {
+		color: $greyColor;
 		transition: color 0.3s;
 		max-width: 78px;
 		@include adaptiveValue('font-size', 14, 10);
@@ -315,7 +313,7 @@
 			position: relative;
 			translate: 10% 10%;
 			font-family: iconfont;
-			content: '\f104';
+			content: '\f108';
 		}
 		@media (any-hover: hover) {
 			&:hover {

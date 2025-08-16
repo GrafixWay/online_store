@@ -8,6 +8,8 @@
 	font-size: 14px;
 	letter-spacing: 0.12em;
 	border-radius: 3px;
+	text-align: center;
+	align-self: center;
 	transition: background-color 0.3s, color 0.3s;
 	@media (any-hover: hover) {
 		&:hover {
@@ -28,6 +30,12 @@
 				color: $blueColor;
 			}
 		}
+	}
+	&--small {
+		font-weight: 600;
+		font-size: 11px;
+		border-radius: 0;
+		padding: 10px 16px;
 	}
 	&--mobile {
 		padding: 0;
