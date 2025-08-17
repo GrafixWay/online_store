@@ -1,5 +1,6 @@
 <script type="module" src="@components/pages/home/home.js"></script>
 <link rel="stylesheet" href="@components/pages/home/home.scss" />
+<link rel="stylesheet" href="@components/custom/product/product.scss" />
 
 <main class="page page--hero">
 	<section class="hero">
@@ -191,6 +192,264 @@
 				</div>
 				<img class="category__img" src="@img/category/motor.png" alt="Image" />
 			</article>
+		</div>
+	</section>
+	<section class="popular">
+		<div class="popular__container">
+			<p class="popular-products__title">Популярные товары</p>
+			<div data-fls-tabs class="popular-tabs">
+				<nav data-fls-tabs-titles class="popular-tabs__navigation">
+					<button type="button" class="popular-tabs__title --tab-active">
+						запчасти
+					</button>
+					<button type="button" class="popular-tabs__title">моторы</button>
+					<button type="button" class="popular-tabs__title">шины</button>
+					<button type="button" class="popular-tabs__title">электроника</button>
+					<button type="button" class="popular-tabs__title">инструменты</button>
+					<button type="button" class="popular-tabs__title">аксессуары</button>
+				</nav>
+				<div data-fls-tabs-body class="popular-tabs__content">
+					<div class="popular-tabs__body">
+						<div class="popular__sliders">
+							<div data-fls-slider class="popular__slider swiper">
+								<div class="popular__swiper-wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "",
+				"img": "backpack",
+				"text": "Водонепроницаемый Рюкзак",
+				"price": "9 800 ₽"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "product--sale",
+				"img": "jacket",
+				"text": "Спасательный жилет BRP Men`s Airflow PFD",
+				"price": "6 900 ₽"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "",
+				"img": "brp audio",
+				"text": "BRP Audio-Premium System",
+				"price": "68 000 ₽"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "product--sale product--out-stock",
+				"img": "help gear",
+				"text": "Спасательное снаряжение",
+				"price": "нет в наличии"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "",
+				"img": "backpack",
+				"text": "Водонепроницаемый Рюкзак",
+				"price": "9 800 ₽"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "product--sale",
+				"img": "jacket",
+				"text": "Спасательный жилет BRP Men`s Airflow PFD",
+				"price": "6 900 ₽"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "",
+				"img": "brp audio",
+				"text": "BRP Audio-Premium System",
+				"price": "68 000 ₽"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "product--sale product--out-stock",
+				"img": "help gear",
+				"text": "Спасательное снаряжение",
+				"price": "нет в наличии"
+			}'
+										></include>
+									</div>
+								</div>
+
+								<div class="swiper-pagination popular__pagination"></div>
+
+								<button
+									type="button"
+									class="swiper-button-prev popular__button popular__button--prev popular__button--icon-prev"
+								></button>
+								<button
+									type="button"
+									class="swiper-button-next popular__button popular__button--next popular__button--icon-next"
+								></button>
+							</div>
+						</div>
+					</div>
+					<div class="popular-tabs__body">2</div>
+					<div class="popular-tabs__body">3</div>
+					<div class="popular-tabs__body">4</div>
+					<div class="popular-tabs__body">5</div>
+					<div class="popular-tabs__body">6</div>
+				</div>
+			</div>
+
+			<div class="popular__morebutton">
+				<a href="#" data-fls-button class="button button--grey">Показать еще</a>
+			</div>
+			<div class="popular__adversment adversment adversment--desktop">
+				<div class="adversment--desktop__images">
+					<img
+						src="@img/popular/kvadro.png"
+						alt="Image"
+						class="adversment--desktop__image"
+					/>
+					<img
+						src="@img/popular/vezde.png"
+						alt="Image"
+						class="adversment--desktop__image"
+					/>
+				</div>
+				<div class="adversment--desktop__content">
+					<h4 class="adversment--desktop__title">CКИДКИ</h4>
+					<p class="adversment--desktop__text">на все запчасти до 70%</p>
+				</div>
+				<a href="#" class="adversment--desktop__button">ПОСМОТЕТЬ ВСЕ</a>
+			</div>
+			<div class="popular__adversment adversment adversment--mobile">
+				<div class="adversment--mobile__content">
+					<p class="adversment--mobile__text">CКИДКИ на все запчасти до 70%</p>
+				</div>
+				<div class="adversment--mobile__body">
+					<img
+						src="@img/popular/kvadro-small.png"
+						alt="Image"
+						class="adversment--mobile__image"
+					/>
+					<a href="#" class="adversment--mobile__button">ПОСМОТЕТЬ ВСЕ</a>
+					<img
+						src="@img/popular/vezde-small.png"
+						alt="Image"
+						class="adversment--mobile__image"
+					/>
+				</div>
+			</div>
+
+			<p class="popular-products__title">С этим товаром покупают</p>
+			<div data-fls-tabs class="popular-tabs">
+				<nav data-fls-tabs-titles class="popular-tabs__navigation">
+					<button type="button" class="popular-tabs__title">запчасти</button>
+					<button type="button" class="popular-tabs__title">моторы</button>
+					<button type="button" class="popular-tabs__title">шины</button>
+					<button type="button" class="popular-tabs__title --tab-active">
+						электроника
+					</button>
+					<button type="button" class="popular-tabs__title">инструменты</button>
+					<button type="button" class="popular-tabs__title">аксессуары</button>
+				</nav>
+				<div data-fls-tabs-body class="popular-tabs__content">
+					<div class="popular-tabs__body">1</div>
+					<div class="popular-tabs__body">2</div>
+					<div class="popular-tabs__body">3</div>
+					<div class="popular-tabs__body">
+						<div class="popular__sliders">
+							<div data-fls-slider class="popular__slider swiper">
+								<div class="popular__swiper-wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "product--sale product--out-stock",
+				"img": "brp audio2",
+				"text": "BRP Audio-портативная система",
+				"price": "нет в наличии"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "",
+				"img": "garmin",
+				"text": "Garmin Echomap Plus 62cv",
+				"price": "45 800 ₽"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "product--sale product--out-stock product--favorite",
+				"img": "key",
+				"text": "RF D.E.S.S.TM Key",
+				"price": "нет в наличии"
+			}'
+										></include>
+									</div>
+									<div class="popular__slide swiper-slide">
+										<include
+											src="@components/custom/product/product.html"
+											locals='{
+				"class": "",
+				"img": "men costume",
+				"text": "Мужской костюм 3мм",
+				"price": "7 000 ₽"
+			}'
+										></include>
+									</div>
+								</div>
+
+								<div class="swiper-pagination popular__pagination"></div>
+
+								<button
+									type="button"
+									class="swiper-button-prev popular__button popular__button--prev popular__button--icon-prev"
+								></button>
+								<button
+									type="button"
+									class="swiper-button-next popular__button popular__button--next popular__button--icon-next"
+								></button>
+							</div>
+						</div>
+					</div>
+					<div class="popular-tabs__body">5</div>
+					<div class="popular-tabs__body">6</div>
+				</div>
+			</div>
 		</div>
 	</section>
 </main>

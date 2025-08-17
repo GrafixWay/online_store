@@ -31,6 +31,17 @@
 			}
 		}
 	}
+	&--grey {
+		background-color: $baseColor;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $mainColor;
+				color: $baseColor;
+			}
+		}
+	}
+
 	&--small {
 		font-weight: 600;
 		font-size: 11px;

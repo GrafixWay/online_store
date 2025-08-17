@@ -110,7 +110,37 @@
       {
         "date": "16.08.2025",
         "start": 1755337969928,
-        "end": 1755337969928
+        "end": 1755343062252
+      },
+      {
+        "date": "16.08.2025",
+        "start": 1755343070938,
+        "end": 1755343204730
+      },
+      {
+        "date": "16.08.2025",
+        "start": 1755371621568,
+        "end": 1755371943297
+      },
+      {
+        "date": "17.08.2025",
+        "start": 1755422383626,
+        "end": 1755425277822
+      },
+      {
+        "date": "17.08.2025",
+        "start": 1755425283205,
+        "end": 1755427382021
+      },
+      {
+        "date": "17.08.2025",
+        "start": 1755454463323,
+        "end": 1755457642009
+      },
+      {
+        "date": "17.08.2025",
+        "start": 1755457652684,
+        "end": 1755457652684
       }
     ],
     "files": [
@@ -168,7 +198,17 @@
       "_components.html",
       "button.scss",
       "footer.html",
-      "footer.scss"
+      "footer.scss",
+      "slider.html",
+      "productcard.html",
+      "productcard.scss",
+      "brp audio.png",
+      "product.scss",
+      "product.html",
+      "product.js",
+      "product.css",
+      "footer.js",
+      "slider-item.html"
     ]
   }
 }

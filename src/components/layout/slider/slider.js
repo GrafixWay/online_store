@@ -26,10 +26,10 @@ import './slider.scss'
 function initSliders() {
 	// Список слайдерів
 	// Перевіряємо, чи є слайдер на сторінці
-	if (document.querySelector('.swiper')) {
+	if (document.querySelector('.hero__slider')) {
 		// <- Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
-		new Swiper('.swiper', {
+		new Swiper('.hero__slider', {
 			// <- Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
@@ -43,7 +43,7 @@ function initSliders() {
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
@@ -96,6 +96,78 @@ function initSliders() {
 				},
 			},
 			*/
+			// Події
+			on: {},
+		})
+	}
+	if (document.querySelector('.popular__slider')) {
+		new Swiper('.popular__slider', {
+			// <- Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation, Pagination],
+			observer: true,
+			observeParents: true,
+			// slidesPerView: 4,
+			// spaceBetween: 30,
+			// autoHeight: true,
+			speed: 800,
+
+			// touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			// lazy: true,
+
+			// Ефекти
+			// effect: 'fade',
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+
+			// Пагінація
+
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "вліво/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
+			},
+
+			// Брейкпоінти
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				600: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				920: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1200: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				},
+			},
+
 			// Події
 			on: {},
 		})

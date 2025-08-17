@@ -51,13 +51,16 @@
 	&__email {
 		@include adaptiveValue('margin-right', 160, 35, 0, 1200, 1000);
 		@media (max-width: toEm($mobile)) {
+			width: 100%;
 			margin-bottom: 41px;
 		}
 	}
 	&__inner {
 		display: flex;
 		@media (max-width: toEm($mobile)) {
+			padding: 0 10px;
 			font-size: 14px;
+			justify-content: center;
 		}
 		&-text {
 			@media (max-width: toEm($mobile)) {
