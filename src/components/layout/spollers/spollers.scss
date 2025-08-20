@@ -1,6 +1,16 @@
 // Базові стилі спойлерів
 // Сніппет (HTML): spoller
-
+[data-fls-spollers] {
+	details {
+	}
+	summary {
+		list-style: none;
+		&::marker,
+		&::-webkit-details-marker {
+			display: none;
+		}
+	}
+}
 // Блок зі спойлерами
 .spollers {
 	display: grid;
@@ -28,7 +38,7 @@
 		cursor: pointer;
 		&::before,
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			right: 10px;
 			top: 50%;

@@ -1,4 +1,7 @@
 .product {
+	@media (max-width: toEm($mobile)) {
+		min-height: 370px;
+	}
 	&,
 	&--sale {
 		@media (any-hover: hover) {
@@ -62,6 +65,7 @@
 	}
 	&__sale {
 		display: none;
+		line-height: 24px;
 	}
 
 	// .product__favorite
@@ -75,6 +79,8 @@
 
 	// .product__img
 	&__button {
+		transition: opacity 0.3s;
+		opacity: 0;
 		display: none;
 	}
 	&__img {
@@ -96,15 +102,16 @@
 		font-weight: 700;
 		font-size: 30px;
 		text-align: center;
+		// margin-bottom: 50px;
 	}
 
 	// .product__cart
 
 	&__cart {
-		display: flex;
-		justify-self: end;
 		color: #fff;
-		position: relative;
+		position: absolute;
+		right: 0;
+		bottom: 0;
 		border-top-left-radius: 10px;
 		padding: 10px 15px;
 		background-color: $blueColor;

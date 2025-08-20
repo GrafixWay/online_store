@@ -140,7 +140,59 @@
       {
         "date": "17.08.2025",
         "start": 1755457652684,
-        "end": 1755457652684
+        "end": 1755474333648
+      },
+      {
+        "date": "18.08.2025",
+        "start": 1755508542059,
+        "end": 1755509902254
+      },
+      {
+        "date": "18.08.2025",
+        "start": 1755539516309,
+        "end": 1755539820882
+      },
+      {
+        "date": "19.08.2025",
+        "start": 1755554509212,
+        "end": 1755555439663
+      },
+      {
+        "date": "19.08.2025",
+        "start": 1755596978994,
+        "end": 1755605897161
+      },
+      {
+        "date": "19.08.2025",
+        "start": 1755608062674,
+        "end": 1755608201523
+      },
+      {
+        "date": "20.08.2025",
+        "start": 1755701062984,
+        "end": 1755701134243
+      },
+      {
+        "date": "20.08.2025",
+        "start": 1755701182294,
+        "end": 1755704341285
+      },
+      {
+        "date": "20.08.2025",
+        "start": 1755704348562,
+        "end": 1755710503035
+      },
+      {
+        "date": "20.08.2025",
+        "start": 1755710507167,
+        "end": 1755710612318,
+        "type": "build"
+      },
+      {
+        "date": "20.08.2025",
+        "start": 1755710843530,
+        "end": 1755712296333,
+        "type": "build"
       }
     ],
     "files": [
@@ -208,7 +260,27 @@
       "product.js",
       "product.css",
       "footer.js",
-      "slider-item.html"
+      "slider-item.html",
+      "s-yt.svg",
+      "search.svg",
+      "s-vk.svg",
+      "s-inst.svg",
+      "person.svg",
+      "s-fb.svg",
+      "percent.svg",
+      "next.svg",
+      "heart.svg",
+      "geo.svg",
+      "cart.svg",
+      "button.js",
+      "second.html",
+      "second.scss",
+      "index copy.html",
+      "index 2.html",
+      "gydrocycle.html",
+      "gydrocycle.scss",
+      "spollers.scss",
+      "index.html"
     ]
   }
 }

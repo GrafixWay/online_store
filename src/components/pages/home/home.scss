@@ -461,8 +461,8 @@
 .adversment {
 	padding: 10px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	background-color: $blueColor;
 	margin-bottom: 77px;
 	&--desktop {
@@ -501,8 +501,8 @@
 				background-color: #fff;
 				font-weight: 500;
 				@include adaptiveValue('font-size', 24, 14);
-				@media (min-width: toEm(1000)) {
-					line-height: 208%;
+				@media (min-width: toEm(1004)) {
+					line-height: 180%;
 				}
 				padding: 3px 41px;
 				text-align: center;

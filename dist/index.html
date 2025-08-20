@@ -14,8 +14,10 @@
 		<link rel="preload" href="./assets/fonts/Barlow-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1755086204210"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1755086204210">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1755712296269"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755712296269">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1755712296269">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -96,7 +98,7 @@
 </each>
 </fetch>
 -->
-						<a class="logo" href="#">
+						<a class="logo" href="../../../index.html">
 							<div class="">
 								<img class="logo__img" src="./assets/img/logo1.svg" alt="Image">
 								<img src="./assets/img/logo2.svg" alt="Image">
@@ -128,7 +130,7 @@
 								<a href="#" class="menu-categories__link">Катера</a>
 							</li>
 							<li class="menu-categories__item">
-								<a href="#" class="menu-categories__link">Гидроциклы</a>
+								<a href="../../../index 2.html" class="menu-categories__link">Гидроциклы</a>
 							</li>
 							<li class="menu-categories__item">
 								<a href="#" class="menu-categories__link">Лодки</a>
@@ -229,21 +231,21 @@
 							<div data-fls-tabs-body="" class="search-tabs__content">
 								<div class="search-tabs__body">
 									<div class="search-tabs__inner">
-										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите номер" class="search-tabs__input">
+										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите номер" class="search-tabs__input input">
 										<a href="#" data-fls-button="" class="button button--blue search-tabs__button--desktop">искать</a>
 										<a href="#" data-fls-button="" class="button button--mobile button--icon-search search-tabs__button--mobile"></a>
 									</div>
 								</div>
 								<div class="search-tabs__body">
 									<div class="search-tabs__inner">
-										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите марку" class="search-tabs__input">
+										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите марку" class="search-tabs__input input">
 										<a href="#" data-fls-button="" class="button button--blue search-tabs__button--desktop">искать</a>
 										<a href="#" data-fls-button="" class="button button--mobile button--icon-search search-tabs__button--mobile"></a>
 									</div>
 								</div>
 								<div class="search-tabs__body">
 									<div class="search-tabs__inner">
-										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите название товара" class="search-tabs__input">
+										<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите название товара" class="search-tabs__input input">
 										<a href="#" data-fls-button="" class="button button--blue search-tabs__button--desktop">искать</a>
 										<a href="#" data-fls-button="" class="button button--mobile button--icon-search search-tabs__button--mobile"></a>
 									</div>
@@ -252,9 +254,739 @@
 						</div>
 					</div>
 				</section>
+				<section class="category">
+					<div class="category__container">
+						<article class="category__card">
+							<div class="category__content">
+								<a class="category__title">Квадроциклы</a>
+								<a href="#" class="category__more">Подробее</a>
+							</div>
+							<picture>
+								<img class="category__img" alt="Image" src="./assets/img/category/kvadro.webp">
+							</picture>
+						</article>
+						<article class="category__card">
+							<div class="category__content">
+								<a class="category__title">Гидроциклы</a>
+								<a href="#" class="category__more">Подробее</a>
+							</div>
+							<picture>
+								<img class="category__img" alt="Image" src="./assets/img/category/gydro.webp">
+							</picture>
+						</article>
+						<article class="category__card">
+							<div class="category__content">
+								<a class="category__title">Катера</a>
+								<a href="#" class="category__more">Подробее</a>
+							</div>
+							<picture>
+								<img class="category__img" alt="Image" src="./assets/img/category/cater.webp">
+							</picture>
+						</article>
+						<article class="category__card">
+							<div class="category__content">
+								<a class="category__title">Снегоходы</a>
+								<a href="#" class="category__more">Подробее</a>
+							</div>
+							<picture>
+								<img class="category__img" alt="Image" src="./assets/img/category/snow.webp">
+							</picture>
+						</article>
+						<article class="category__card">
+							<div class="category__content">
+								<a class="category__title">Вездеходы</a>
+								<a href="#" class="category__more">Подробее</a>
+							</div>
+							<picture>
+								<img class="category__img" alt="Image" src="./assets/img/category/vezde.webp">
+							</picture>
+						</article>
+						<article class="category__card">
+							<div class="category__content">
+								<a class="category__title">Двигатели</a>
+								<a href="#" class="category__more">Подробее</a>
+							</div>
+							<picture>
+								<img class="category__img" alt="Image" src="./assets/img/category/motor.webp">
+							</picture>
+						</article>
+					</div>
+				</section>
+				<section class="popular">
+					<div class="popular__container">
+						<p class="popular-products__title">Популярные товары</p>
+						<div data-fls-tabs="" class="popular-tabs">
+							<nav data-fls-tabs-titles="" class="popular-tabs__navigation">
+								<button type="button" class="popular-tabs__title --tab-active">запчасти</button>
+								<button type="button" class="popular-tabs__title">моторы</button>
+								<button type="button" class="popular-tabs__title">шины</button>
+								<button type="button" class="popular-tabs__title">электроника</button>
+								<button type="button" class="popular-tabs__title">инструменты</button>
+								<button type="button" class="popular-tabs__title">аксессуары</button>
+							</nav>
+							<div data-fls-tabs-body="" class="popular-tabs__content">
+								<div class="popular-tabs__body">
+									<div class="popular__sliders">
+										<div data-fls-slider="" class="popular__slider swiper">
+											<div class="popular__swiper-wrapper swiper-wrapper">
+												<!-- Слайд -->
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/backpack.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Водонепроницаемый Рюкзак</p>
+															<p class="product__price">9 800 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/jacket.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Спасательный жилет BRP Men`s Airflow PFD</p>
+															<p class="product__price">6 900 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<img class="product__img" src="./assets/img/product/brp%20audio.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">BRP Audio-Premium System</p>
+															<p class="product__price">68 000 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<img class="product__img" src="./assets/img/product/help%20gear.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Спасательное снаряжение</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/backpack.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Водонепроницаемый Рюкзак</p>
+															<p class="product__price">9 800 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/jacket.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Спасательный жилет BRP Men`s Airflow PFD</p>
+															<p class="product__price">6 900 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<img class="product__img" src="./assets/img/product/brp%20audio.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">BRP Audio-Premium System</p>
+															<p class="product__price">68 000 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<img class="product__img" src="./assets/img/product/help%20gear.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Спасательное снаряжение</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination popular__pagination"></div>
+											<button type="button" class="swiper-button-prev popular__button popular__button--prev popular__button--icon-prev"></button>
+											<button type="button" class="swiper-button-next popular__button popular__button--next popular__button--icon-next"></button>
+										</div>
+									</div>
+								</div>
+								<div class="popular-tabs__body">2</div>
+								<div class="popular-tabs__body">3</div>
+								<div class="popular-tabs__body">
+									<div class="popular-tabs__body">
+										<div class="popular__sliders">
+											<div data-fls-slider="" class="popular__slider swiper">
+												<div class="popular__swiper-wrapper swiper-wrapper">
+													<!-- Слайд -->
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale product--out-stock">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<img class="product__img" src="./assets/img/product/brp%20audio2.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">BRP Audio-портативная система</p>
+																<p class="product__price">нет в наличии</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/garmin.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Garmin Echomap Plus 62cv</p>
+																<p class="product__price">45 800 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale product--out-stock product--favorite">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/key.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">RF D.E.S.S.TM Key</p>
+																<p class="product__price">нет в наличии</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<img class="product__img" src="./assets/img/product/men%20costume.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Мужской костюм 3мм</p>
+																<p class="product__price">7 000 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale product--out-stock">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<img class="product__img" src="./assets/img/product/brp%20audio2.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">BRP Audio-портативная система</p>
+																<p class="product__price">нет в наличии</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/garmin.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Garmin Echomap Plus 62cv</p>
+																<p class="product__price">45 800 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale product--out-stock product--favorite">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/key.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">RF D.E.S.S.TM Key</p>
+																<p class="product__price">нет в наличии</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<img class="product__img" src="./assets/img/product/men%20costume.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Мужской костюм 3мм</p>
+																<p class="product__price">7 000 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-pagination popular__pagination"></div>
+												<button type="button" class="swiper-button-prev popular__button popular__button--prev popular__button--icon-prev"></button>
+												<button type="button" class="swiper-button-next popular__button popular__button--next popular__button--icon-next"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popular-tabs__body">5</div>
+								<div class="popular-tabs__body">6</div>
+							</div>
+						</div>
+						<div class="popular__morebutton">
+							<a href="#" data-fls-button="" class="button button--grey">Показать еще</a>
+						</div>
+						<div class="popular__adversment adversment adversment--desktop">
+							<div class="adversment--desktop__images">
+								<picture>
+									<img alt="Image" class="adversment--desktop__image" src="./assets/img/popular/kvadro.webp">
+								</picture>
+								<picture>
+									<img alt="Image" class="adversment--desktop__image" src="./assets/img/popular/vezde.webp">
+								</picture>
+							</div>
+							<div class="adversment--desktop__content">
+								<h4 class="adversment--desktop__title">CКИДКИ</h4>
+								<p class="adversment--desktop__text">на все запчасти до 70%</p>
+							</div>
+							<a href="#" class="adversment--desktop__button">ПОСМОТЕТЬ ВСЕ</a>
+						</div>
+						<div class="popular__adversment adversment adversment--mobile">
+							<div class="adversment--mobile__content">
+								<p class="adversment--mobile__text">CКИДКИ на все запчасти до 70%</p>
+							</div>
+							<div class="adversment--mobile__body">
+								<picture>
+									<img alt="Image" class="adversment--mobile__image" src="./assets/img/popular/kvadro-small.webp">
+								</picture>
+								<a href="#" class="adversment--mobile__button">ПОСМОТЕТЬ ВСЕ</a>
+								<picture>
+									<img alt="Image" class="adversment--mobile__image" src="./assets/img/popular/vezde-small.webp">
+								</picture>
+							</div>
+						</div>
+						<p class="popular-products__title">С этим товаром покупают</p>
+						<div data-fls-tabs="" class="popular-tabs">
+							<nav data-fls-tabs-titles="" class="popular-tabs__navigation">
+								<button type="button" class="popular-tabs__title">запчасти</button>
+								<button type="button" class="popular-tabs__title">моторы</button>
+								<button type="button" class="popular-tabs__title">шины</button>
+								<button type="button" class="popular-tabs__title --tab-active">электроника</button>
+								<button type="button" class="popular-tabs__title">инструменты</button>
+								<button type="button" class="popular-tabs__title">аксессуары</button>
+							</nav>
+							<div data-fls-tabs-body="" class="popular-tabs__content">
+								<div class="popular-tabs__body">
+									<div class="popular-tabs__body">
+										<div class="popular__sliders">
+											<div data-fls-slider="" class="popular__slider swiper">
+												<div class="popular__swiper-wrapper swiper-wrapper">
+													<!-- Слайд -->
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/backpack.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Водонепроницаемый Рюкзак</p>
+																<p class="product__price">9 800 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/jacket.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Спасательный жилет BRP Men`s Airflow PFD</p>
+																<p class="product__price">6 900 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<img class="product__img" src="./assets/img/product/brp%20audio.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">BRP Audio-Premium System</p>
+																<p class="product__price">68 000 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale product--out-stock">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<img class="product__img" src="./assets/img/product/help%20gear.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Спасательное снаряжение</p>
+																<p class="product__price">нет в наличии</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/backpack.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Водонепроницаемый Рюкзак</p>
+																<p class="product__price">9 800 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/jacket.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Спасательный жилет BRP Men`s Airflow PFD</p>
+																<p class="product__price">6 900 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<img class="product__img" src="./assets/img/product/brp%20audio.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">BRP Audio-Premium System</p>
+																<p class="product__price">68 000 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale product--out-stock">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+																<img class="product__img" src="./assets/img/product/help%20gear.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Спасательное снаряжение</p>
+																<p class="product__price">нет в наличии</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-pagination popular__pagination"></div>
+												<button type="button" class="swiper-button-prev popular__button popular__button--prev popular__button--icon-prev"></button>
+												<button type="button" class="swiper-button-next popular__button popular__button--next popular__button--icon-next"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popular-tabs__body">2</div>
+								<div class="popular-tabs__body">3</div>
+								<div class="popular-tabs__body">
+									<div class="popular__sliders">
+										<div data-fls-slider="" class="popular__slider swiper">
+											<div class="popular__swiper-wrapper swiper-wrapper">
+												<!-- Слайд -->
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<img class="product__img" src="./assets/img/product/brp%20audio2.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">BRP Audio-портативная система</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/garmin.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Garmin Echomap Plus 62cv</p>
+															<p class="product__price">45 800 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock product--favorite">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/key.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">RF D.E.S.S.TM Key</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<img class="product__img" src="./assets/img/product/men%20costume.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Мужской костюм 3мм</p>
+															<p class="product__price">7 000 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<img class="product__img" src="./assets/img/product/brp%20audio2.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">BRP Audio-портативная система</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/garmin.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Garmin Echomap Plus 62cv</p>
+															<p class="product__price">45 800 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock product--favorite">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/key.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">RF D.E.S.S.TM Key</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<a href="#" class="product__favorite product__favorite--icon-heart"></a>
+															<img class="product__img" src="./assets/img/product/men%20costume.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Мужской костюм 3мм</p>
+															<p class="product__price">7 000 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination popular__pagination"></div>
+											<button type="button" class="swiper-button-prev popular__button popular__button--prev popular__button--icon-prev"></button>
+											<button type="button" class="swiper-button-next popular__button popular__button--next popular__button--icon-next"></button>
+										</div>
+									</div>
+								</div>
+								<div class="popular-tabs__body">5</div>
+								<div class="popular-tabs__body">6</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			<footer data-fls-footer="" class="footer">
-				<div class="footer__container"></div>
+				<div class="footer__container">
+					<div class="footer__top">
+						<div class="footer__email">
+							<p class="footer__text">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</p>
+							<div class="footer__inner">
+								<input data-fls-input="" autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Введите ваш e-mail:" class="footer__input input">
+								<a href="#" data-fls-button="" class="button button--blue button--small footer__button">Отправить</a>
+							</div>
+						</div>
+						<div data-fls-spollers="767.98" class="footer__info">
+							<details class="footer__menu">
+								<summary>
+									<h5 class="footer__info-title">Информация</h5>
+								</summary>
+								<ul class="footer__list">
+									<li class="footer__item">
+										<a href="#" class="footer__link">О компании</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Контакты</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Акции</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Магазины</a>
+									</li>
+								</ul>
+							</details>
+							<details class="footer__menu">
+								<summary>
+									<h5 class="footer__info-title">Интернет-магазин</h5>
+								</summary>
+								<ul class="footer__list">
+									<li class="footer__item">
+										<a href="#" class="footer__link">Доставка и самовывоз</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Оплата</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Возврат-обмен</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Новости</a>
+									</li>
+								</ul>
+							</details>
+						</div>
+						<div class="footer__social social">
+							<ul class="social__list">
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-s-inst"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-s-vk"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-s-fb"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-s-yt"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<a href="#">Договор оферты</a>
+						<a href="#">Политика обработки персональных данных</a>
+					</div>
+				</div>
 			</footer>
 		</div>
 	</body>
