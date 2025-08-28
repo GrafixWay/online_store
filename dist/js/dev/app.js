@@ -293,6 +293,7 @@ document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menu
 export {
   setHash as a,
   slideUp as b,
+  slideToggle as c,
   dataMediaQueries as d,
   getHash as g,
   slideDown as s

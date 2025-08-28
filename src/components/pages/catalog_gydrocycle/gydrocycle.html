@@ -1,0 +1,278 @@
+<script
+	type="module"
+	src="@components/pages/catalog_gydrocycle/gydrocycle.js"
+></script>
+<link
+	rel="stylesheet"
+	href="@components/pages/catalog_gydrocycle/gydrocycle.scss"
+/>
+
+<main class="page page--gydrocycle">
+	<div data-fls-breadcrumbs class="breadcrumbs">
+		<div class="breadcrumbs__container">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item">
+					<a href="index.html" class="breadcrumbs__link">Главная</a>
+				</li>
+				<li class="breadcrumbs__item">
+					<span class="breadcrumbs__link">Гидроциклы</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="catalog">
+		<div class="catalog__container">
+			<h2 class="catalog__title">Гидроциклы</h2>
+			<div class="catalog__filter">
+				<div class="catalog__items">
+					<a href="#" data-fls-button class="button button--grey button--filter"
+						>Полноприводные</a
+					>
+					<a href="#" data-fls-button class="button button--grey button--filter"
+						>от 5000</a
+					>
+					<a href="#" data-fls-button class="button button--grey button--filter"
+						>BRP</a
+					>
+					<a href="#" data-fls-button class="button button--grey button--filter"
+						>еще</a
+					>
+				</div>
+				<div class="catalog__buttons">
+					<select name="form[]" data-fls-select data-fls-select-modif="form">
+						<option value="1" selected>По полулярности</option>
+						<option value="2">Пункт №2</option>
+						<option value="3">Пункт №3</option>
+						<option value="4">Пункт №4</option>
+					</select>
+					<a href="#" data-fls-button class="button button--mobile">
+						<svg
+							width="23"
+							height="21"
+							viewBox="0 0 23 21"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect
+								x="1"
+								y="1"
+								width="21"
+								height="19"
+								stroke="#2F3035"
+								stroke-width="2"
+							/>
+							<rect
+								x="7"
+								y="6"
+								width="2"
+								height="2"
+								fill="#2F3035"
+								stroke="#2F3035"
+								stroke-width="2"
+							/>
+							<rect
+								x="7"
+								y="13"
+								width="2"
+								height="2"
+								fill="#2F3035"
+								stroke="#2F3035"
+								stroke-width="2"
+							/>
+							<rect
+								x="14"
+								y="6"
+								width="2"
+								height="2"
+								fill="#2F3035"
+								stroke="#2F3035"
+								stroke-width="2"
+							/>
+							<rect
+								x="14"
+								y="13"
+								width="2"
+								height="2"
+								fill="#2F3035"
+								stroke="#2F3035"
+								stroke-width="2"
+							/>
+						</svg>
+					</a>
+					<a href="#" data-fls-button class="button button--mobile">
+						<svg
+							width="25"
+							height="19"
+							viewBox="0 0 25 19"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g opacity="0.3">
+								<rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
+								<rect
+									x="6"
+									y="8"
+									width="19"
+									height="3"
+									rx="1.5"
+									fill="#2F3035"
+								/>
+								<rect
+									x="6"
+									y="16"
+									width="19"
+									height="3"
+									rx="1.5"
+									fill="#2F3035"
+								/>
+								<rect width="3" height="3" rx="1.5" fill="#2F3035" />
+								<rect y="8" width="3" height="3" rx="1.5" fill="#2F3035" />
+								<rect y="16" width="3" height="3" rx="1.5" fill="#2F3035" />
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="catalog__content">
+				<aside class="catalog__aside">filter...</aside>
+				<div class="catalog__card">
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "",
+				"img": "gydrocycle1",
+				"text": "Гидроцикл BRP SeaDoo GTI 130hp SE Black/Mango",
+				"price": "1 049 500 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "product--sale",
+				"img": "gydrocycle2",
+				"text": "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
+				"price": "1 100 475 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "",
+				"img": "gydrocycle3",
+				"text": "Гидроцикл BRP SeaDoo GTR 230hp X California green ",
+				"price": "1 323 700 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "product--sale product--out-stock",
+				"img": "gydrocycle4",
+				"text": "Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream",
+				"price": "нет в наличии"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "",
+				"img": "gydrocycle5",
+				"text": "Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal",
+				"price": "1 543 000 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "",
+				"img": "gydrocycle6",
+				"text": "Гидроцикл BRP SeaDoo Spark 60hp 2 up",
+				"price": "732 345 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "",
+				"img": "gydrocycle7",
+				"text": "Гидроцикл BRP SeaDoo Spark GTS 90hp Rental",
+				"price": "857 666 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "product--sale",
+				"img": "gydrocycle8",
+				"text": "Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue",
+				"price": "1 229 711 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "",
+				"img": "gydrocycle9",
+				"text": "Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper",
+				"price": "587 440 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "",
+				"img": "gydrocycle10",
+				"text": "Гидроцикл Spark 2-UP 900 Ho Ace Pineapple ",
+				"price": "587 440 ₽"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "product--sale product--out-stock",
+				"img": "gydrocycle11",
+				"text": "Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla ",
+				"price": "нет в наличии"
+			}'
+					></include>
+					<include
+						src="@components/custom/product/product.html"
+						locals='{
+				"class": "product--out-stock",
+				"img": "gydrocycle12",
+				"text": "Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry",
+				"price": "нет в наличии"
+			}'
+					></include>
+					<div class="catalog__pagination pagination">
+						<ul class="pagination__list">
+							<li class="pagination__item">
+								<div href="#" class="pagination__link pagination__link--active">
+									1
+								</div>
+							</li>
+							<li class="pagination__item">
+								<div href="#" class="pagination__link">2</div>
+							</li>
+							<li class="pagination__item">
+								<div href="#" class="pagination__link">3</div>
+							</li>
+							<li class="pagination__item">
+								<div href="#" class="pagination__link">4</div>
+							</li>
+							<li class="pagination__item">
+								<div href="#" class="pagination__link">5</div>
+							</li>
+							<li class="pagination__item">
+								<span>...</span>
+							</li>
+							<li class="pagination__item">
+								<div href="#" class="pagination__link">11</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>

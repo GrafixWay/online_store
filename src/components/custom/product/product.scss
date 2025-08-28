@@ -1,27 +1,24 @@
 .product {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: box-shadow 0.3s;
 	@media (max-width: toEm($mobile)) {
-		min-height: 370px;
+		// min-height: 370px;
 	}
 	&,
 	&--sale {
+		.popular__slide & {
+		}
 		@media (any-hover: hover) {
 			&:hover {
+				border: none;
+				box-shadow: 3px 3px 20px 0 rgba(50, 50, 50, 0.25);
 				.product__text,
 				.product__price {
 					color: $blueColor;
 				}
 				.product__button {
-					display: block;
-					transition: opacity 0.3s;
-					left: 50%;
-					top: 30%;
-					min-width: 230px;
-					padding: 18px 22px;
-					text-align: center;
-					translate: -50% 0;
-					position: absolute;
-					background-color: #fff;
-					box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 					opacity: 0.9;
 					@media (any-hover: hover) {
 						&:hover {
@@ -75,13 +72,29 @@
 		right: 19px;
 		font-size: 23px;
 		position: absolute;
+		&--active {
+			&::before {
+				font-family: iconfont;
+				content: '\f110';
+				color: $blueColor;
+			}
+		}
 	}
 
 	// .product__img
 	&__button {
 		transition: opacity 0.3s;
 		opacity: 0;
-		display: none;
+		display: block;
+		left: 50%;
+		top: 30%;
+		min-width: 230px;
+		padding: 18px 22px;
+		text-align: center;
+		translate: -50% 0;
+		position: absolute;
+		background-color: #fff;
+		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 	}
 	&__img {
 		margin-bottom: 14px;
@@ -102,7 +115,7 @@
 		font-weight: 700;
 		font-size: 30px;
 		text-align: center;
-		// margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
 
 	// .product__cart

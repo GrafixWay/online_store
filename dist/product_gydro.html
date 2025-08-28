@@ -14,9 +14,11 @@
 		<link rel="preload" href="./assets/fonts/Barlow-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1755712296268"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755712296268">
-		<link rel="stylesheet" crossorigin="" href="./css/index 2.min.css?v=1755712296268">
+		<script type="module" crossorigin="" src="./js/product_gydro.min.js?v=1756405484284"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1756405484284">
+		<link rel="stylesheet" crossorigin="" href="./css/product_gydro.min.css?v=1756405484284">
+		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1756405484284">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -97,7 +99,7 @@
 </each>
 </fetch>
 -->
-						<a class="logo" href="../../../index.html">
+						<a class="logo" href="index.html">
 							<div class="">
 								<img class="logo__img" src="./assets/img/logo1.svg" alt="Image">
 								<img src="./assets/img/logo2.svg" alt="Image">
@@ -129,7 +131,7 @@
 								<a href="#" class="menu-categories__link">Катера</a>
 							</li>
 							<li class="menu-categories__item">
-								<a href="../../../index 2.html" class="menu-categories__link">Гидроциклы</a>
+								<a href="catalog_gydro.html" class="menu-categories__link">Гидроциклы</a>
 							</li>
 							<li class="menu-categories__item">
 								<a href="#" class="menu-categories__link">Лодки</a>
@@ -150,7 +152,23 @@
 					</div>
 				</div>
 			</header>
-			<main class="page page--gydrocycle"></main>
+			<main class="page page--gydrocycle">
+				<div data-fls-breadcrumbs="" class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="index.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="catalog_gydro.html" class="breadcrumbs__link">Гидроциклы</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__link">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</main>
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<div class="footer__top">

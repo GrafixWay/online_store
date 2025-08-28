@@ -19,8 +19,9 @@
 		// @media (max-width: toEm(890)) {
 		// 	width: 100%;
 		// }
-
-		@include adaptiveValue('width', 870, 320);
+		@media (min-width: toEm(1024)) {
+			@include adaptiveValue('width', 870, 320);
+		}
 		@media (max-width: toEm(1024)) {
 			width: 100%;
 		}
@@ -162,6 +163,7 @@
 	// .search-tabs__navigation
 
 	&__navigation {
+		margin-bottom: 30px;
 		@media (max-width: toEm($mobile)) {
 			display: flex;
 			text-wrap: nowrap;
@@ -340,6 +342,7 @@
 	}
 
 	&__slider {
+		padding: 10px;
 	}
 	&__slide {
 		display: flex;
@@ -418,6 +421,7 @@
 		display: flex;
 		@include adaptiveValue('gap', 50, 30);
 		overflow-x: auto;
+		margin-bottom: 30px;
 	}
 
 	// .popular-tabs__title

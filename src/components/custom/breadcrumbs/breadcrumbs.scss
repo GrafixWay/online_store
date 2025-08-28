@@ -1,0 +1,36 @@
+.breadcrumbs {
+	margin-bottom: 45px;
+	// .breadcrumbs__container
+
+	&__container {
+	}
+
+	// .breadcrumbs__list
+
+	&__list {
+	}
+
+	// .breadcrumbs__item
+
+	&__item {
+		color: $greyColor;
+		font-size: 15px;
+		display: inline-flex;
+		&:not(:last-child) {
+			&::after {
+				margin: 0 10px;
+				font-family: iconfont;
+				content: '\f108';
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+			}
+		}
+	}
+
+	// .breadcrumbs__link
+
+	&__link {
+	}
+}

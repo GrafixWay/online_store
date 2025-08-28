@@ -1,7 +1,7 @@
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("C://programming/online_store/src/assets/svgicons/preview/iconfont.woff2?5e6bdc798d215277833d7aaf104b72ac") format("woff2"); 
+	src: url("C://programming/online_store/src/assets/svgicons/preview/iconfont.woff2?38f8207bb1d7045b1649340122cf7d67") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -30,18 +30,30 @@
 	[class*="--icon-next"]::before { 
 		content: "\f108"; 
 	} 
-	[class*="--icon-home"]::before { 
+	[class*="--icon-line"]::before { 
 		content: "\f109"; 
 	} 
-	[class*="--icon-heart"]::before { 
+	[class*="--icon-home"]::before { 
 		content: "\f10a"; 
 	} 
-	[class*="--icon-geo"]::before { 
+	[class*="--icon-heart"]::before { 
 		content: "\f10b"; 
 	} 
-	[class*="--icon-cart"]::before { 
+	[class*="--icon-grid"]::before { 
 		content: "\f10c"; 
 	} 
-	[class*="--icon-box"]::before { 
+	[class*="--icon-geo"]::before { 
 		content: "\f10d"; 
+	} 
+	[class*="--icon-cart"]::before { 
+		content: "\f10e"; 
+	} 
+	[class*="--icon-box"]::before { 
+		content: "\f10f"; 
+	} 
+	[class*="--icon-blue-heart"]::before { 
+		content: "\f110"; 
+	} 
+	[class*="--icon-arrow"]::before { 
+		content: "\f111"; 
 	} 

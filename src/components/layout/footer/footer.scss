@@ -1,4 +1,5 @@
 .footer {
+	margin-top: 40px;
 	background-color: #f9f9fc;
 	// .footer__container
 	&__container {
@@ -54,6 +55,9 @@
 		max-width: 230px;
 		margin-bottom: 34px;
 		line-height: 18px;
+		@media (max-width: toEm($mobile)) {
+			margin-top: 30px;
+		}
 	}
 
 	&__input {
@@ -93,15 +97,20 @@
 
 	&__menu {
 		&:last-child {
-			.footer__info-title {
-				border-bottom: 2px solid $baseColor;
-			}
-			.--spoller-active .footer__info-title {
-				border-bottom: none;
-			}
+			@media (max-width: toEm($mobile)) {
+				.footer__info-title {
+					border-bottom: 2px solid $baseColor;
+				}
+				.--spoller-active .footer__info-title {
+					border-bottom: none;
+				}
 
-			.--spoller-active + .footer__list {
-				border-bottom: 2px solid $baseColor;
+				.--spoller-active + .footer__list {
+					border-bottom: 2px solid $baseColor;
+				}
+			}
+			@media (min-width: toEm($mobile)) {
+				min-width: 40%;
 			}
 		}
 	}
@@ -117,6 +126,10 @@
 
 	&__info-title {
 		font-weight: 700;
+		text-align: center;
+		@media (min-width: toEm($mobile)) {
+			margin-bottom: 10px;
+		}
 		@media (max-width: toEm($mobile)) {
 			color: #7f7f7f;
 		}
@@ -155,25 +168,16 @@
 	&__link {
 		position: relative;
 		transition: color 0.3s;
-		&::before {
-			content: '';
-			transition: left 0.3s, width 0.3s;
-			width: 0;
-			position: absolute;
-			bottom: 0px;
-			left: 50%;
-			background-color: $blueColor;
-			height: 3px;
-		}
+		color: #7f7f7f;
 		@media (any-hover: hover) {
 			&:hover {
 				color: #000;
-				&::before {
-					content: '';
-					width: 100%;
-					left: 0;
-				}
 			}
+		}
+		@media (min-width: toEm($mobile)) {
+			text-align: center;
+			display: flex;
+			justify-content: center;
 		}
 	}
 }
@@ -207,11 +211,43 @@
 	// .social__link
 
 	&__link {
+		transition: color 0.3s;
+		// @media (any-hover: hover) {
+		// 	&:hover {
+		// 		color: $blueColor;
+		// 	}
+		// }
 		&::before {
 			font-size: 30px;
 		}
+		&--icon-s-inst {
+			@media (any-hover: hover) {
+				&:hover {
+					color: #aa790e;
+				}
+			}
+		}
 		&--icon-s-vk {
 			translate: 0 -17%;
+			@media (any-hover: hover) {
+				&:hover {
+					color: $blueColor;
+				}
+			}
+		}
+		&--icon-s-fb {
+			@media (any-hover: hover) {
+				&:hover {
+					color: $blueColor;
+				}
+			}
+		}
+		&--icon-s-yt {
+			@media (any-hover: hover) {
+				&:hover {
+					color: #ff0000;
+				}
+			}
 		}
 	}
 }
