@@ -14,13 +14,13 @@
 		<link rel="preload" href="./assets/fonts/Barlow-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/catalog_gydro.min.js?v=1756405484282"></script>
+		<script type="module" crossorigin="" src="./js/catalog_gydro.min.js?v=1756473752551"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
-		<link rel="modulepreload" crossorigin="" href="./js/product.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1756405484282">
-		<link rel="stylesheet" crossorigin="" href="./css/product.min.css?v=1756405484282">
-		<link rel="stylesheet" crossorigin="" href="./css/catalog_gydro.min.css?v=1756405484282">
-		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1756405484282">
+		<link rel="modulepreload" crossorigin="" href="./js/home.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1756473752551">
+		<link rel="stylesheet" crossorigin="" href="./css/home.min.css?v=1756473752551">
+		<link rel="stylesheet" crossorigin="" href="./css/catalog_gydro.min.css?v=1756473752551">
+		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1756473752551">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -172,10 +172,10 @@
 						<h2 class="catalog__title">Гидроциклы</h2>
 						<div class="catalog__filter">
 							<div class="catalog__items">
-								<a href="#" data-fls-button="" class="button button--grey button--filter">Полноприводные</a>
-								<a href="#" data-fls-button="" class="button button--grey button--filter">от 5000</a>
-								<a href="#" data-fls-button="" class="button button--grey button--filter">BRP</a>
-								<a href="#" data-fls-button="" class="button button--grey button--filter">еще</a>
+								<a href="#" data-fls-button="" class="button button--grey button--op button--filter">Полноприводные</a>
+								<a href="#" data-fls-button="" class="button button--grey button--op button--filter">от 5000</a>
+								<a href="#" data-fls-button="" class="button button--grey button--op button--filter">BRP</a>
+								<a href="#" data-fls-button="" class="button button--grey button--op button--filter">еще</a>
 							</div>
 							<div class="catalog__buttons">
 								<select name="form[]" data-fls-select="" data-fls-select-modif="form">
@@ -208,175 +208,378 @@
 							</div>
 						</div>
 						<div class="catalog__content">
-							<aside class="catalog__aside">filter...</aside>
+							<aside class="catalog__aside">
+								<div data-fls-tabs="" class="catalog-tabs">
+									<nav data-fls-tabs-titles="" class="catalog-tabs__navigation">
+										<button type="button" class="catalog-tabs__title --tab-active">Параметры</button>
+										<button type="button" class="catalog-tabs__title">по марке</button>
+									</nav>
+									<div data-fls-tabs-body="" class="catalog-tabs__content">
+										<div class="catalog-tabs__body">
+											<div data-fls-spollers="" class="catalog-spollers">
+												<details class="catalog-spollers__item">
+													<summary class="catalog-spollers__title">Наличие</summary>
+													<div class="catalog-spollers__body">
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">В наличие</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Под заказ</span>
+														</label>
+													</div>
+												</details>
+											</div>
+											<div data-fls-spollers="" class="catalog-spollers">
+												<details class="catalog-spollers__item">
+													<summary class="catalog-spollers__title">Новинки</summary>
+													<div class="catalog-spollers__body">
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Все</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Новинки</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Акции</span>
+														</label>
+													</div>
+												</details>
+											</div>
+											<div data-fls-spollers="" class="catalog-spollers">
+												<details class="catalog-spollers__item">
+													<summary class="catalog-spollers__title">Цена</summary>
+													<div class="catalog-spollers__body">
+														<div data-fls-pricerange="" class="price-range">
+															<div class="price-range__slider">
+																<div class="price-range__progressbar">
+																	<div class="price-range__progress"></div>
+																</div>
+																<div class="price-range__input">
+																	<input type="range" class="price-range__min" min="0" max="2000000" value="100000" step="10000">
+																	<input type="range" class="price-range__max" min="0" max="2000000" value="500000" step="10000">
+																</div>
+															</div>
+															<div class="price-range__value">
+																<div>
+																	<span>от</span>
+																	<span class="price-range__value-min">100 000 ₽</span>
+																</div>
+																<div>
+																	<span>от</span>
+																	<span class="price-range__value-max">500 000 ₽</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</details>
+											</div>
+											<div class="catalog-selects">
+												<div class="catalog-select">
+													<h2 class="catalog-select__title">Мощность, л.с.</h2>
+													<select name="form[]" data-fls-select="" data-fls-select-modif="form">
+														<option value="1" selected>90</option>
+														<option value="2">130</option>
+														<option value="3">154</option>
+														<option value="4">230</option>
+														<option value="5">300</option>
+													</select>
+												</div>
+												<div class="catalog-select">
+													<h2 class="catalog-select__title">Мощность двигателя, л.с.</h2>
+													<select name="form[]" data-fls-select="" data-fls-select-modif="form">
+														<option value="1" selected>90</option>
+														<option value="2">130</option>
+														<option value="3">154</option>
+														<option value="4">230</option>
+														<option value="5">300</option>
+													</select>
+												</div>
+												<div class="catalog-select">
+													<h2 class="catalog-select__title">Макс. скорость</h2>
+													<select name="form[]" data-fls-select="" data-fls-select-modif="form">
+														<option value="1" selected>90</option>
+														<option value="2">130</option>
+														<option value="3">154</option>
+														<option value="4">230</option>
+														<option value="5">300</option>
+													</select>
+												</div>
+											</div>
+											<div data-fls-spollers="" class="catalog-spollers">
+												<details class="catalog-spollers__item">
+													<summary class="catalog-spollers__title">Бренд</summary>
+													<div class="catalog-spollers__body">
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">BRP</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Spark 2</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Spark 3</span>
+														</label>
+														<a href="#" class="catalog-checkbox__link">Показать еще</a>
+													</div>
+												</details>
+											</div>
+											<div data-fls-spollers="" class="catalog-spollers">
+												<details class="catalog-spollers__item">
+													<summary class="catalog-spollers__title">Модель</summary>
+													<div class="catalog-spollers__body">
+														<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Введите модель" class="input catalog-checkbox__input">
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Sea-doo Spark 2</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">SeaDoo Spark 90</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">SeaDoo GTI 155</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">SeaDoo GTR 230</span>
+														</label>
+														<a href="#" class="catalog-checkbox__link">Показать еще</a>
+													</div>
+												</details>
+											</div>
+											<div data-fls-spollers="" class="catalog-spollers">
+												<details class="catalog-spollers__item">
+													<summary class="catalog-spollers__title">Акции</summary>
+													<div class="catalog-spollers__body">
+														<div href="#" data-fls-button="" class="button button--blue button--little">SALE</div>
+														<div href="#" data-fls-button="" class="button button--base button--little">NEW</div>
+														<div href="#" data-fls-button="" class="button button--base button--little">HIT</div>
+														<div href="#" data-fls-button="" class="button button--mainC button--little">ДИЛЕР</div>
+													</div>
+												</details>
+											</div>
+											<div data-fls-spollers="" class="catalog-spollers">
+												<details class="catalog-spollers__item">
+													<summary class="catalog-spollers__title">Страны</summary>
+													<div class="catalog-spollers__body">
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Россия</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Германия</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">Китай</span>
+														</label>
+														<label data-fls-checkbox="" class="checkbox catalog-checkbox catalog-checkbox--rect">
+															<input data-error="Ошибка" class="checkbox__input catalog-checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__text catalog-checkbox__text">CША</span>
+														</label>
+														<a href="#" class="catalog-checkbox__link">Показать еще</a>
+													</div>
+												</details>
+											</div>
+											<a href="#" data-fls-button="" class="button button--grey catalog__choosebutton">ВЫБРАТЬ</a>
+											<div data-fls-spollers="" class="catalog-spollers catalog-spollers__another">
+												<details class="catalog-spollers__item">
+													<summary class="catalog-spollers__title">Дополнительные параметры</summary>
+													<div class="catalog-spollers__body">
+														<span>asd</span>
+														<span>asd</span>
+														<span>asd</span>
+													</div>
+												</details>
+											</div>
+											<a href="#" class="catalog-spollers__delete">Сбросить фильтр</a>
+										</div>
+										<div class="catalog-tabs__body">2</div>
+									</div>
+								</div>
+							</aside>
 							<div class="catalog__card">
-								<div data-fls-product="" class="product">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle1.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP SeaDoo GTI 130hp SE Black/Mango</p>
-										<p class="product__price">1 049 500 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product product--sale">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle2.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</p>
-										<p class="product__price">1 100 475 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle3.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP SeaDoo GTR 230hp X California green</p>
-										<p class="product__price">1 323 700 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product product--sale product--out-stock">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle4.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream</p>
-										<p class="product__price">нет в наличии</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle5.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal</p>
-										<p class="product__price">1 543 000 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle6.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP SeaDoo Spark 60hp 2 up</p>
-										<p class="product__price">732 345 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle7.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP SeaDoo Spark GTS 90hp Rental</p>
-										<p class="product__price">857 666 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product product--sale">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle8.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue</p>
-										<p class="product__price">1 229 711 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle9.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper</p>
-										<p class="product__price">587 440 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle10.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл Spark 2-UP 900 Ho Ace Pineapple</p>
-										<p class="product__price">587 440 ₽</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product product--sale product--out-stock">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle11.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla</p>
-										<p class="product__price">нет в наличии</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
-								</div>
-								<div data-fls-product="" class="product product--out-stock">
-									<article class="product__card">
-										<div class="product__sale">sale</div>
-										<div class="product__favorite product__favorite--icon-heart"></div>
-										<picture>
-											<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle12.webp">
-										</picture>
-										<a href="#" class="product__button">посмотреть товар</a>
-										<p class="product__text">Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry</p>
-										<p class="product__price">нет в наличии</p>
-									</article>
-									<a href="#" class="product__cart product__cart--icon-cart"></a>
-									<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+								<div class="catalog__card-inner">
+									<div data-fls-product="" class="product">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle1.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP SeaDoo GTI 130hp SE Black/Mango</p>
+											<p class="product__price">1 049 500 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product product--sale">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle2.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</p>
+											<p class="product__price">1 100 475 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle3.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP SeaDoo GTR 230hp X California green</p>
+											<p class="product__price">1 323 700 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product product--sale product--out-stock">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle4.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream</p>
+											<p class="product__price">нет в наличии</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle5.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal</p>
+											<p class="product__price">1 543 000 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle6.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP SeaDoo Spark 60hp 2 up</p>
+											<p class="product__price">732 345 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle7.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP SeaDoo Spark GTS 90hp Rental</p>
+											<p class="product__price">857 666 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product product--sale">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle8.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue</p>
+											<p class="product__price">1 229 711 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle9.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper</p>
+											<p class="product__price">587 440 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle10.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл Spark 2-UP 900 Ho Ace Pineapple</p>
+											<p class="product__price">587 440 ₽</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product product--sale product--out-stock">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle11.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla</p>
+											<p class="product__price">нет в наличии</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div data-fls-product="" class="product product--out-stock">
+										<article class="product__card">
+											<div class="product__sale">sale</div>
+											<div class="product__favorite product__favorite--icon-heart"></div>
+											<picture>
+												<img class="product__img" alt="Image" src="./assets/img/product/gydrocycle12.webp">
+											</picture>
+											<a href="#" class="product__button">посмотреть товар</a>
+											<p class="product__text">Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry</p>
+											<p class="product__price">нет в наличии</p>
+										</article>
+										<a href="#" class="product__cart product__cart--icon-cart"></a>
+										<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+									</div>
+									<div class="popular__morebutton">
+										<a href="#" data-fls-button="" class="button button--grey">Показать еще</a>
+									</div>
 								</div>
 								<div class="catalog__pagination pagination">
 									<ul class="pagination__list">
@@ -404,6 +607,296 @@
 									</ul>
 								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+				<section class="popular">
+					<div class="popular__container">
+						<p class="popular-products__title">С этим товаром покупают</p>
+						<div data-fls-tabs="" class="popular-tabs">
+							<nav data-fls-tabs-titles="" class="popular-tabs__navigation">
+								<button type="button" class="popular-tabs__title">запчасти</button>
+								<button type="button" class="popular-tabs__title">моторы</button>
+								<button type="button" class="popular-tabs__title">шины</button>
+								<button type="button" class="popular-tabs__title --tab-active">электроника</button>
+								<button type="button" class="popular-tabs__title">инструменты</button>
+								<button type="button" class="popular-tabs__title">аксессуары</button>
+							</nav>
+							<div data-fls-tabs-body="" class="popular-tabs__content">
+								<div class="popular-tabs__body">
+									<div class="popular-tabs__body">
+										<div class="popular__sliders">
+											<div data-fls-slider="" class="popular__slider swiper">
+												<div class="popular__swiper-wrapper swiper-wrapper">
+													<!-- Слайд -->
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<div class="product__favorite product__favorite--icon-heart"></div>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/backpack.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Водонепроницаемый Рюкзак</p>
+																<p class="product__price">9 800 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<div class="product__favorite product__favorite--icon-heart"></div>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/jacket.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Спасательный жилет BRP Men`s Airflow PFD</p>
+																<p class="product__price">6 900 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<div class="product__favorite product__favorite--icon-heart"></div>
+																<img class="product__img" src="./assets/img/product/brp%20audio.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">BRP Audio-Premium System</p>
+																<p class="product__price">68 000 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale product--out-stock">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<div class="product__favorite product__favorite--icon-heart"></div>
+																<img class="product__img" src="./assets/img/product/help%20gear.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Спасательное снаряжение</p>
+																<p class="product__price">нет в наличии</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<div class="product__favorite product__favorite--icon-heart"></div>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/backpack.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Водонепроницаемый Рюкзак</p>
+																<p class="product__price">9 800 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<div class="product__favorite product__favorite--icon-heart"></div>
+																<picture>
+																	<img class="product__img" alt="Image" src="./assets/img/product/jacket.webp">
+																</picture>
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Спасательный жилет BRP Men`s Airflow PFD</p>
+																<p class="product__price">6 900 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<div class="product__favorite product__favorite--icon-heart"></div>
+																<img class="product__img" src="./assets/img/product/brp%20audio.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">BRP Audio-Premium System</p>
+																<p class="product__price">68 000 ₽</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+													<div class="popular__slide swiper-slide">
+														<div data-fls-product="" class="product product--sale product--out-stock">
+															<article class="product__card">
+																<div class="product__sale">sale</div>
+																<div class="product__favorite product__favorite--icon-heart"></div>
+																<img class="product__img" src="./assets/img/product/help%20gear.png" alt="Image">
+																<a href="#" class="product__button">посмотреть товар</a>
+																<p class="product__text">Спасательное снаряжение</p>
+																<p class="product__price">нет в наличии</p>
+															</article>
+															<a href="#" class="product__cart product__cart--icon-cart"></a>
+															<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-pagination popular__pagination"></div>
+												<button type="button" class="swiper-button-prev popular__button popular__button--prev popular__button--icon-prev"></button>
+												<button type="button" class="swiper-button-next popular__button popular__button--next popular__button--icon-next"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popular-tabs__body">2</div>
+								<div class="popular-tabs__body">3</div>
+								<div class="popular-tabs__body">
+									<div class="popular__sliders">
+										<div data-fls-slider="" class="popular__slider swiper">
+											<div class="popular__swiper-wrapper swiper-wrapper">
+												<!-- Слайд -->
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<div class="product__favorite product__favorite--icon-heart"></div>
+															<img class="product__img" src="./assets/img/product/brp%20audio2.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">BRP Audio-портативная система</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<div class="product__favorite product__favorite--icon-heart"></div>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/garmin.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Garmin Echomap Plus 62cv</p>
+															<p class="product__price">45 800 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock product--favorite">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<div class="product__favorite product__favorite--icon-heart"></div>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/key.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">RF D.E.S.S.TM Key</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<div class="product__favorite product__favorite--icon-heart"></div>
+															<img class="product__img" src="./assets/img/product/men%20costume.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Мужской костюм 3мм</p>
+															<p class="product__price">7 000 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<div class="product__favorite product__favorite--icon-heart"></div>
+															<img class="product__img" src="./assets/img/product/brp%20audio2.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">BRP Audio-портативная система</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<div class="product__favorite product__favorite--icon-heart"></div>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/garmin.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Garmin Echomap Plus 62cv</p>
+															<p class="product__price">45 800 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product product--sale product--out-stock product--favorite">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<div class="product__favorite product__favorite--icon-heart"></div>
+															<picture>
+																<img class="product__img" alt="Image" src="./assets/img/product/key.webp">
+															</picture>
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">RF D.E.S.S.TM Key</p>
+															<p class="product__price">нет в наличии</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+												<div class="popular__slide swiper-slide">
+													<div data-fls-product="" class="product">
+														<article class="product__card">
+															<div class="product__sale">sale</div>
+															<div class="product__favorite product__favorite--icon-heart"></div>
+															<img class="product__img" src="./assets/img/product/men%20costume.png" alt="Image">
+															<a href="#" class="product__button">посмотреть товар</a>
+															<p class="product__text">Мужской костюм 3мм</p>
+															<p class="product__price">7 000 ₽</p>
+														</article>
+														<a href="#" class="product__cart product__cart--icon-cart"></a>
+														<a href="#" class="product__out-stock">Сообщить о поступлении</a>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination popular__pagination"></div>
+											<button type="button" class="swiper-button-prev popular__button popular__button--prev popular__button--icon-prev"></button>
+											<button type="button" class="swiper-button-next popular__button popular__button--next popular__button--icon-next"></button>
+										</div>
+									</div>
+								</div>
+								<div class="popular-tabs__body">5</div>
+								<div class="popular-tabs__body">6</div>
+							</div>
+						</div>
+						<div class="popular__morebutton">
+							<a href="#" data-fls-button="" class="button button--grey">Показать еще</a>
 						</div>
 					</div>
 				</section>

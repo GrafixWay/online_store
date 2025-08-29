@@ -1,5 +1,5 @@
-import { b as slideUp, c as slideToggle } from "./app.min.js";
-import "./product.min.js";
+import { s as slideUp, a as slideToggle } from "./app.min.js";
+import "./home.min.js";
 /* empty css                */
 let formValidate = {
   getErrors(form) {
@@ -541,6 +541,26 @@ class SelectConstructor {
   }
 }
 document.querySelector("select[data-fls-select]") ? window.addEventListener("load", () => window.flsSelect = new SelectConstructor({})) : null;
+document.addEventListener("DOMContentLoaded", () => {
+  const minInput = document.querySelector(".price-range__min");
+  const maxInput = document.querySelector(".price-range__max");
+  const progress = document.querySelector(".price-range__progress");
+  const minValue = document.querySelector(".price-range__value-min");
+  const maxValue = document.querySelector(".price-range__value-max");
+  const update = () => {
+    if (+minInput.value > +maxInput.value) minInput.value = maxInput.value;
+    if (+maxInput.value < +minInput.value) maxInput.value = minInput.value;
+    const range = maxInput.max - minInput.min;
+    progress.style.left = (minInput.value - minInput.min) / range * 100 + "%";
+    progress.style.right = 100 - (maxInput.value - minInput.min) / range * 100 + "%";
+    const format = (num) => Number(num).toLocaleString("ru-RU") + " ₽";
+    minValue.textContent = format(minInput.value);
+    maxValue.textContent = format(maxInput.value);
+  };
+  minInput.addEventListener("input", update);
+  maxInput.addEventListener("input", update);
+  update();
+});
 let pagItems = document.querySelectorAll(".pagination__link");
 pagItems.forEach((item) => {
   item.addEventListener("click", function() {

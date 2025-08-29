@@ -264,6 +264,22 @@
         "date": "28.08.2025",
         "start": 1756402973697,
         "end": 1756405490910
+      },
+      {
+        "date": "29.08.2025",
+        "start": 1756454235575,
+        "end": 1756454443564
+      },
+      {
+        "date": "29.08.2025",
+        "start": 1756454466148,
+        "end": 1756465226067
+      },
+      {
+        "date": "29.08.2025",
+        "start": 1756465230683,
+        "end": 1756473752689,
+        "type": "build"
       }
     ],
     "files": [
@@ -361,7 +377,12 @@
       "header.js",
       "line.svg",
       "blue-heart.svg",
-      "arrow.svg"
+      "arrow.svg",
+      "range.js",
+      "pricerange.html",
+      "pricerange.scss",
+      "pricerange.js",
+      "checkbox.scss"
     ]
   }
 }

@@ -291,10 +291,10 @@ function menuInit() {
 }
 document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
 export {
-  setHash as a,
-  slideUp as b,
-  slideToggle as c,
+  slideToggle as a,
+  slideDown as b,
+  setHash as c,
   dataMediaQueries as d,
   getHash as g,
-  slideDown as s
+  slideUp as s
 };

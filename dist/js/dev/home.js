@@ -1,5 +1,4 @@
-import { g as getHash, d as dataMediaQueries, s as slideDown, a as setHash, b as slideUp } from "./app.min.js";
-import "./product.min.js";
+import { g as getHash, d as dataMediaQueries, b as slideDown, c as setHash, s as slideUp } from "./app.min.js";
 function tabs() {
   const tabs2 = document.querySelectorAll("[data-fls-tabs]");
   let tabsActiveHash = [];
@@ -116,6 +115,12 @@ function tabs() {
   }
 }
 window.addEventListener("load", tabs);
+let products = document.querySelectorAll(".product__favorite");
+products.forEach((product) => {
+  product.addEventListener("click", function() {
+    this.classList.toggle("product__favorite--active");
+  });
+});
 function isObject$1(obj) {
   return obj !== null && typeof obj === "object" && "constructor" in obj && obj.constructor === Object;
 }
